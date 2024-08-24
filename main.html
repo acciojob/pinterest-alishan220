@@ -1,16 +1,87 @@
-<!DOCTYPE html>
-
-<html>
-
+html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest-like Hero Section</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            justify-content: ce
+            align-items: cent
+            height: 100v
+            position: relative;             
+            overflow: hidden;     
+        }
+
+        .hero img {
+            position: absolute;          
+            width: 100%;                 
+            height: 100%;                 
+            object-fit: cover;               
+            z-index: -1;                     
+        }
+
+        .hero-content {
+            text-align: center;              
+            max-width: 600px;                
+            padding: 20px;                   
+            background: rgba(0, 0, 0, 0.5); 
+            border-radius: 10px;            
+            z-index: 1;                      
+        }
+
+        .hero h1 {
+            font-size: 3rem;                 
+            margin-bottom: 20px;             
+        }
+
+        .hero p {
+            font-size: 1.5rem;               
+            margin-bottom: 30px;             
+        }
+
+        .explore-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .explore-button {
+            background-color: #0077cc;       
+            margin-top: 20px;                
+        }
+
+        .explore-button:hover {
+            background-color: #005999;       
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <section class="hero">
+        <img src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Hero Image">
+        <div class="hero-content">
+            <h1>Welcome to my<br>Pinterest clone</h1>
+            <p>Discover and save creative ideas</p>
+            <!-- <a href="#" class="cta-button">Get Started</a> -->
+            <a href="#" class="explore-button">Explore Now</a>
+        </div>
+    </section>
 </body>
-
 </html>
